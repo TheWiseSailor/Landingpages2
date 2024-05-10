@@ -3,30 +3,21 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from './HeaderImages/logo.png';
-import './Header.css'; 
+import './Header.css';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isContactClicked, setIsContactClicked] = useState(false);
-  const [isResumeClicked, setIsResumeClicked] = useState(false); 
-  const [isNewsClicked, setIsNewsClicked] = useState(false); 
-  const [isPortfolioClicked, setIsPortfolioClicked] = useState(false); 
-  const [isPropertiesClicked, setIsPropertiesClicked] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const [activeLink, setActiveLink] = useState('');
   const location = useLocation();
 
   useEffect(() => {
     const { pathname } = location;
-    setIsContactClicked(pathname.toLowerCase() === '/properties');
-    setIsNewsClicked(pathname.toLowerCase() === '/news');
-    setIsPortfolioClicked(pathname.toLowerCase() === '/contact');
-    setIsPropertiesClicked(pathname.toLowerCase() === '/properties');
+    const path = pathname.toLowerCase();
+    setActiveLink(path);
+
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -41,18 +32,39 @@ const Header = () => {
   };
 
   return (
-    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''} ${isPortfolioClicked ? 'portfolio' : ''}${isPropertiesClicked ? 'properties' : ''}`}>
+    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${activeLink}`}>
       <div className="container header">
         <div className="logo-container">
           <Link to="/">
-            <img src={logo} alt="Logo" className="logo" />
+            <img src={logo} alt="Café Logo" className="logo" />
           </Link>
         </div>
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li className='nav-li'><Link to="/properties" className={isResumeClicked ? 'black-and-white' : ''}>Ice Cream</Link></li>
-            <li className='nav-li'><Link to="/news" className={isPortfolioClicked ? 'black-and-white' : ''}>Bakery</Link></li>
-            <li className='nav-li'><Link to="/contact" className={isContactClicked ? 'black-and-white' : ''}>Gift Shop</Link></li>
+            <li className='nav-li'>
+              <Link
+                to="/ice-cream"
+                className={activeLink === '/ice-cream' ? 'active' : ''}
+              >
+                Ice Cream
+              </Link>
+            </li>
+            <li className='nav-li'>
+              <Link
+                to="/bakery"
+                className={activeLink === '/bakery' ? 'active' : ''}
+              >
+                Bakery
+              </Link>
+            </li>
+            <li className='nav-li'>
+              <Link
+                to="/gift-shop"
+                className={activeLink === '/gift-shop' ? 'active' : ''}
+              >
+                Gift Shop
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>

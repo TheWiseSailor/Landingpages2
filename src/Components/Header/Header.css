@@ -1,16 +1,49 @@
 .HeaderPrimary {
-  background: #AE887B;
+  background: #FCD667;
   padding: 20px 0;
   transition: background-color 0.3s ease;
   position: relative;
   z-index: 1000;
 }
+/* COLOR CHANGING HEADER */
 
+
+
+/* Background color for each active page */
+.header.ice-cream {
+  background-color: #f8d7da; 
+}
+
+.header.bakery {
+  background-color: #cce5ff; 
+}
+
+.HeaderPrimary.gift-shop {
+  background-color: #d4edda; 
+}
+
+.mobile-menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu-icon.active .MMI-icon {
+  color: #ff5733; 
+}
+
+
+
+
+
+/*  LIME GREEN  #32CD32 */
+/*  SLATE BLUE  #6A5ACD*/
+/* MEDIUM YELLOW 	#FCD667 */
+/*   color: black;  */
+/*   color: white;  */
 .header {
   margin: 0 auto;
 }
-
-.HeaderPrimary.esports {
+.HeaderPrimary.gift-shop {
   color: black;
 }
 
