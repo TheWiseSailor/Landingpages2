@@ -10,11 +10,11 @@
 
 
 /* Background color for each active page */
-.header.ice-cream {
+.HeaderPrimary.ice-cream {
   background-color: #f8d7da; 
 }
 
-.header.bakery {
+.HeaderPrimary.bakery {
   background-color: #cce5ff; 
 }
 

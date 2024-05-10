@@ -13,8 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     const { pathname } = location;
-    const path = pathname.toLowerCase();
-    setActiveLink(path);
+    setActiveLink(pathname.toLowerCase()); // Set activeLink to lowercase pathname
 
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
@@ -32,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${activeLink}`}>
+    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${activeLink.replace('/', '')}`}>
       <div className="container header">
         <div className="logo-container">
           <Link to="/">
