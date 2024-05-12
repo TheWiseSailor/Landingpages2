@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     const { pathname } = location;
-    setActiveLink(pathname.toLowerCase()); // Set activeLink to lowercase pathname
+    setActiveLink(pathname.toLowerCase()); 
 
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
@@ -75,3 +75,4 @@ const Header = () => {
 }
 
 export default Header;
+//get started on the homepage
