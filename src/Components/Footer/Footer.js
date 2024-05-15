@@ -1,9 +1,10 @@
 // Footer.js
 import React from 'react';
-import './Footer.css'
-const Footer = () => {
+import './Footer.css';
+
+const Footer = ({ activePage }) => {
   return (
-    <footer>
+    <footer className={`footer ${activePage.replace('/', '')}`}>
       <p>Footer content goes here</p>
     </footer>
   );

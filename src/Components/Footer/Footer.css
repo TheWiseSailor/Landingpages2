@@ -2,8 +2,25 @@
 footer {
   background-color: #AE887B;
   color: #fff;
-font-weight: bolder;
-font-size: 20px;
-  padding: 1px;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Background color for each active page */
+footer.ice-cream {
+  background-color: #f8d7da; 
+}
+
+footer.bakery {
+  background-color: #cce5ff; 
+}
+
+footer.gift-shop {
+  background-color: #d4edda; 
 }
