@@ -11,3 +11,4 @@ const HomeRender = () => {
 }
 
 export default HomeRender;
+//get working on the home renderings
