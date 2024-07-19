@@ -1,12 +1,13 @@
-/* src/Components/AStripe/Stripe.css */
 .stripe-header {
+  top: 0;
   text-align: center;
-  background-color: #f8f9fa; 
-  border-bottom: 1px solid #ddd; 
+  background-color: #d4edda; 
+  padding: 20px 0;
+  margin-bottom: 0;
 }
 
 .stripe-header p {
-  margin: 5px 0;
+  margin: 0; 
 }
 
 .stripe-header a {
