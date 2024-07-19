@@ -1,13 +1,14 @@
 import React from 'react';
 import Hero from '../Components/HomePage/Hero/Hero';
-import StripeHeader from '../Components/AStripe/StripeHeader';
+import Stripe from './AStripe/Stripe';
 import Contact from './Contact/Contact';
 const HomeRender = () => {
   return (
     <div>
       <Hero />
-      <StripeHeader />
+  
       <Contact/>
+      <Stripe />
     </div>
   );
 }
