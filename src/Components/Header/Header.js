@@ -35,7 +35,7 @@ const Header = () => {
       <div className="container header">
         <div className="logo-container">
           <Link to="/">
-            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" /> {/* Use image logo */}
+            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" /> 
           </Link>
         </div>
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -64,6 +64,7 @@ const Header = () => {
                 Gift Shop
               </Link>
             </li>
+   
           </ul>
         </nav>
         <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
