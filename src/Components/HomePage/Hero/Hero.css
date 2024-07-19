@@ -1,44 +1,42 @@
-/* Styles for the hero container */
 .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 115vh; /* Full viewport height */
-  width: 100vw;  /* Full viewport width */
-  overflow: hidden; /* Hide overflow content */
-  position: relative; /* Position relative for absolute positioning of the image */
-  margin-top:-270px; /* No margin */
+  height: 115vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  margin-top: -270px;
 }
 
-/* Styles for the hero image */
 .hero-image {
-  width: 100vw; /* Full viewport width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the container while maintaining aspect ratio */
-  position: absolute; /* Absolute positioning */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  transform: none; /* No transform */
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
 }
 
-/* Media queries for responsive design */
 @media (max-width: 1205px) {
   .hero-container {
-    height: auto; /* Adjust height for smaller screens */
+    height: auto;
   }
 
   .hero-image {
-    width: 100%; /* Full width */
-    max-width: none; /* Remove any maximum width */
-    position: relative; /* Position relative for small screens */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    transform: none; /* No transform */
+    width: 100%;
+    max-width: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
   }
 }
+
 @media (max-width: 1205px) {
   .hero-container {
-    height: auto; 
+    height: auto;
     margin-top: 0;
-  }}
+  }
+}

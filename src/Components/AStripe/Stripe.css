@@ -1,0 +1,19 @@
+/* src/Components/AStripe/Stripe.css */
+.stripe-header {
+  text-align: center;
+  background-color: #f8f9fa; 
+  border-bottom: 1px solid #ddd; 
+}
+
+.stripe-header p {
+  margin: 5px 0;
+}
+
+.stripe-header a {
+  text-decoration: none;
+  color: #007bff; 
+}
+
+.stripe-header a:hover {
+  text-decoration: underline;
+}
