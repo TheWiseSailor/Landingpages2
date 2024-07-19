@@ -6,9 +6,8 @@
   z-index: 1000;
   font-family: 'Honey Script', cursive;
   color: #000000;
-  top:0;
+  top: 0;
 }
-
 
 .HeaderPrimary.ice-cream {
   background-color: #f8d7da; 
@@ -22,7 +21,6 @@
   background-color: #d4edda; 
 }
 
-
 .logo-container {
   display: flex;
   align-items: center;
@@ -33,7 +31,6 @@
   width: auto;
   display: block;
 }
-
 
 .logo:hover {
   text-decoration: none;
@@ -103,7 +100,7 @@
   min-width: 100px;
   margin-left: -10px;
   border-radius: 0 0 10px 10px;
-  background-color: #ffffff;
+  background-color: #d4edda
 }
 
 @media (max-width: 768px) {
@@ -112,7 +109,7 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     max-width: 100%;
     overflow-x: hidden;
     background-color: #ffffff;
@@ -120,7 +117,7 @@
 
   .navbar ul li a {
     text-decoration: none;
-    color: rgb(255, 245, 106);
+    color: rgb(0, 0, 0);
     transition: color 0.3s ease;
   }
 
