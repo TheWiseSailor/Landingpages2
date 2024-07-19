@@ -1,10 +1,14 @@
+
+
 /* Footer.css */
 footer {
+  font-family: 'Honey Script', cursive;
   background: #FCD667;
-  color: #fff;
-  font-weight: bolder;
+  color: #000000;
+ 
   font-size: 20px;
-  padding: 10px;
+font-weight:600;
+
   text-align: center;
   position: fixed;
   width: 100%;
@@ -24,3 +28,5 @@ footer.bakery {
 footer.gift-shop {
   background-color: #d4edda; 
 }
+
+

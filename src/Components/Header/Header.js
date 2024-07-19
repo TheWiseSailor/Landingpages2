@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import logo from './HeaderImages/logo.png';
 import './Header.css';
+import logo from './HeaderImages/logo.png'; 
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,7 +35,7 @@ const Header = () => {
       <div className="container header">
         <div className="logo-container">
           <Link to="/">
-            <img src={logo} alt="Café Logo" className="logo" />
+            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" /> {/* Use image logo */}
           </Link>
         </div>
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -75,4 +75,3 @@ const Header = () => {
 }
 
 export default Header;
-//get started on the homepage

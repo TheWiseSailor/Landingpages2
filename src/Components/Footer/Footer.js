@@ -5,7 +5,7 @@ import './Footer.css';
 const Footer = ({ activePage }) => {
   return (
     <footer className={`footer ${activePage.replace('/', '')}`}>
-      <p>Footer content goes here</p>
+      <p> &copy; 2024 Pfieffer Cafe & Confections |  All Rights Reserved</p>
     </footer>
   );
 }
