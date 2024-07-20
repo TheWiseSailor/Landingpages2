@@ -8,8 +8,6 @@ const StripeHeader = () => {
       <p>116 E. Warren Street, Shelby, NC | (704) 481-7285 | Monday-Saturday 11 a.m. - 10 p.m. | Closed Sunday</p>
       
 
-
-      <a href="/order-online">ORDER ONLINE</a>
     </div>
   );
 }

@@ -42,7 +42,17 @@
     position: relative;
     top: 0;
     left: 0;
-    height: auto; 
+    height: 100vh; 
     transform: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-container {
+    height: 100vh;
+  }
+  
+  .hero-image {
+    height: 100vh;
   }
 }
