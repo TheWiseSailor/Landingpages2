@@ -1,6 +1,5 @@
-// Contact.js
 import React from 'react';
-import './Contact.css'
+import './Contact.css';
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
@@ -11,13 +10,16 @@ function Contact() {
   }
 
   return (
-    <div className="contact-container-form-page">
-      
+    <div className="contact-page-container">
+      <div className="info-section">
+        <h2>Get In Touch:</h2>
+        <p>Pfeiffer Cafe is passionately committed to delivering delectable and mouth-watering cuisine to the vibrant community of uptown Shelby. We warmly invite you to reach out to us for more detailed information or to share your invaluable suggestions on how we can enhance our services to serve you better.
+</p>
+      </div>
       <div className="contact-form-container-page" data-aos="fade-down"
               data-aos-duration="3000">
         <h2 className="ContactHomePageHeader-container-page">Contact</h2>
         <form onSubmit={handleSubmit} className="form-container">
-   
           <input
             id="name"
             type="text"
@@ -25,7 +27,6 @@ function Contact() {
             placeholder="Your Name"
             required
           />
-
           <input
             id="email"
             type="email"
@@ -33,21 +34,18 @@ function Contact() {
             placeholder="Your Email Address"
             required
           />
-       
           <input
             id="phone"
             type="tel"
             name="phone"
             placeholder="Your Phone Number"
           />
-      
           <input
             id="subject"
             type="text"
             name="subject"
             placeholder="Subject of your message"
           />
-     
           <textarea
             id="message"
             name="message"
@@ -57,7 +55,6 @@ function Contact() {
           <button type="submit" disabled={state.submitting} className="button-container-page">
             Submit
           </button>
-     
           <ValidationError
             prefix="Email"
             field="email"

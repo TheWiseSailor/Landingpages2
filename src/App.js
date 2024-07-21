@@ -10,8 +10,8 @@ const App = () => {
     <div>
       <Header />
       <Routes>
+        <Route path="/Landingpages2" element={<HomeRender />} />
         <Route path="/" element={<HomeRender />} />
-        {/* Add more routes here as needed */}
       </Routes>
       <Footer activePage={location.pathname} />
     </div>
