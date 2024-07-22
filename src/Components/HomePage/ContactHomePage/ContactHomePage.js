@@ -1,23 +1,22 @@
 import React from 'react';
-import './Contact.css';
+import './ContactHomePage.css';
 import { useForm, ValidationError } from '@formspree/react';
 
-function Contact() {
+function ContactHomePage() {
   const [state, handleSubmit] = useForm("balls");
 
   if (state.succeeded) {
-    return <div className='SuccessMessageBackground'><p className=' SuccessMessage'>Success!<br/> I will be in touch!</p></div>;
+    return <div className='SuccessMessageBackground'><p className='SuccessMessage'>Success!<br/> I will be in touch!</p></div>;
   }
 
   return (
-    <div className="contact-page-container">
+    <div className="ContactHomePage-page-container">
       <div className="info-section">
         <h2>Get In Touch:</h2>
         <p>Pfeiffer Cafe is passionately committed to delivering delectable and mouth-watering cuisine to the vibrant community of uptown Shelby. We warmly invite you to reach out to us for more detailed information or to share your invaluable suggestions on how we can enhance our services to serve you better.
-</p>
+        </p>
       </div>
-      <div className="contact-form-container-page" data-aos="fade-down"
-              data-aos-duration="3000">
+      <div className="ContactHomePage-form-container-page" data-aos="fade-down" data-aos-duration="3000">
         <h2 className="ContactHomePageHeader-container-page">Contact</h2>
         <form onSubmit={handleSubmit} className="form-container">
           <input
@@ -73,8 +72,8 @@ function Contact() {
 
 function App() {
   return (
-    <Contact />
+    <ContactHomePage />
   );
 }
 
-export default Contact;
+export default ContactHomePage;

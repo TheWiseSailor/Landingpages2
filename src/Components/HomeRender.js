@@ -1,13 +1,13 @@
 import React from 'react';
 import Hero from '../Components/HomePage/Hero/Hero';
 import Stripe from './AStripe/Stripe';
-import Contact from './HomePage/ContactHomePage/Contact';
+import ContactHomePage from './HomePage/ContactHomePage/ContactHomePage';
 const HomeRender = () => {
   return (
     <div>
       <Hero />
   
-      <Contact/>
+      <ContactHomePage/>
       <Stripe />
     </div>
   );
