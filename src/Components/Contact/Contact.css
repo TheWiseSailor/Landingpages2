@@ -4,30 +4,18 @@
   align-items: center;
   background-color: #f8d7da;
   height: 100vh;
-  margin-top: -131px;
-  margin-bottom: -45px;
+
+  
+
   padding: 20px;
 
 }
 
-.info-section {
-  font-family: 'Honey Script', cursive;
-  font-weight: bolder;
-  font-size: 30px;
-  flex: 1;
-  text-align: center;
-  max-width: 300px;
-  margin-right: 120px;
-  background-color: #cce5ff;
-  padding: 20px;
 
-  border-radius: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 .contact-form-container-page {
   font-family: 'Honey Script', cursive;
-  
+  margin-bottom: 150px;
   font-size: 30px;
   flex: 1;
   max-width: 470px;
@@ -111,18 +99,13 @@
    padding-bottom: 200px;
   }
 
-  .info-section {
-    margin-right: 0;
-    margin-bottom: 90px;
-    margin-top: 330px;
-    
-  }
+
 
   .contact-form-container-page {
     width: 100%;
  
     max-width: 300px;
-    margin-bottom: 750px;
+    margin-bottom: 450px;
 
   }
 }

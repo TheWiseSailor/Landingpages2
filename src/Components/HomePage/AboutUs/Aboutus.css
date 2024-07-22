@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.Aboutus-responsive-container-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Aboutus-bigContainer {
+  width: 100%;
+}
+
+.Aboutus-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.Aboutus-allText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Aboutus-headingText {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Aboutus-subHeadingText {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.Aboutus-description {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.Aboutus-explore {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Aboutus-mainImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.Aboutus-bottomContainer {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .Aboutus-Container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .Aboutus-Container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .Aboutus-Container {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
