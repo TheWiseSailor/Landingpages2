@@ -1,3 +1,6 @@
+//https://workik.com/top-about-us-section-website-designs-with-html-css-and-javascript-code
+// credits are for the above with preset layouts
+
 import React from 'react';
 import './Aboutus.css';
 
