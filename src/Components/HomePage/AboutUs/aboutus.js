@@ -11,7 +11,7 @@ const Aboutus = () => {
         <img className="Aboutus-mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg" alt="Our Mission"/>
         <div className="Aboutus-allText Aboutus-aboveText">
           <p className="text-blk Aboutus-headingText">
-            Our Mission
+            About Us
           </p>
           <p className="text-blk Aboutus-subHeadingText">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
