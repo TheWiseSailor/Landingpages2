@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomeRender from './Components/HomeRender';
+import Contact from './Components/Contact/Contact'; 
+
 
 const App = () => {
   const location = useLocation();
@@ -12,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/Landingpages2" element={<HomeRender />} />
         <Route path="/" element={<HomeRender />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer activePage={location.pathname} />
     </div>

@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
-import logo from './HeaderImages/logo.png'; 
+import logo from './HeaderImages/logo.png';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     const { pathname } = location;
-    setActiveLink(pathname.toLowerCase()); 
+    setActiveLink(pathname.toLowerCase());
 
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
@@ -35,7 +35,7 @@ const Header = () => {
       <div className="container header">
         <div className="logo-container">
           <Link to="/">
-            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" /> 
+            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" />
           </Link>
         </div>
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -64,7 +64,14 @@ const Header = () => {
                 Gift Shop
               </Link>
             </li>
-   
+            <li className='nav-li'>
+              <Link
+                to="/contact"
+                className={activeLink === '/contact' ? 'active' : ''}
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>

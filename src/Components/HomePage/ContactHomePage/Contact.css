@@ -4,10 +4,10 @@
   align-items: center;
   background-color: #f8d7da;
   height: 100vh;
-  margin-top: -131px;
+  margin-top: -21px;
   margin-bottom: -45px;
   padding: 20px;
-
+  
 }
 
 .info-section {
@@ -108,13 +108,12 @@
     align-items: center;
     max-height: 600px;
    padding-top: 700px;
-   padding-bottom: 200px;
   }
 
   .info-section {
     margin-right: 0;
     margin-bottom: 90px;
-    margin-top: 330px;
+    margin-top: 90px;
     
   }
 
@@ -123,6 +122,5 @@
  
     max-width: 300px;
     margin-bottom: 750px;
-
   }
 }
