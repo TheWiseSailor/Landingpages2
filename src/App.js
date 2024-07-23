@@ -4,7 +4,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomeRender from './Components/HomeRender';
 import Contact from './Components/Contact/Contact';
-import IceCream from './Components/IceCream/IceCream';
+
 
 const App = () => {
   const location = useLocation();
@@ -15,7 +15,6 @@ const App = () => {
         <Route path="/Landingpages2" element={<HomeRender />} />
         <Route path="/" element={<HomeRender />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/ice-cream" element={<IceCream />} /> 
       </Routes>
       <Footer activePage={location.pathname} />
     </div>
