@@ -309,7 +309,7 @@ body {
   }
   
 }
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .AboutUs-number1img,
   .AboutUs-number2img,
   .AboutUs-number3img,
@@ -370,4 +370,4 @@ body {
   .AboutUs-leftSide {
     width: 100%;
   }
-} */
+}
