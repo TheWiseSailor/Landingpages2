@@ -9,6 +9,7 @@
 body {
   margin: 0;
 }
+
 .AboutUs-background {
   background-color: #cce5ff; 
 }
@@ -30,7 +31,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1320px;
+  max-width: 1420px;
   margin: 80px auto;
 }
 
@@ -46,7 +47,7 @@ body {
 }
 
 .AboutUs-text-blk {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 40px;
 }
 
@@ -110,7 +111,8 @@ body {
 
 .AboutUs-number6img {
   width: 35%;
-  height: 33%;
+  height: 20%;
+  margin-top: 15%;
   margin-left: 64%;
 }
 
@@ -159,9 +161,9 @@ body {
   
   .AboutUs-number6img {
     width: 35%;
-    height: 33%;
+    height: 20%;
     margin-left: 35%;
-    margin-top: -70px;
+    margin-top: 20px;
   }
   
   .AboutUs-number7img {
@@ -170,7 +172,80 @@ body {
     margin-top: 35%;
     margin-left: 75%;
   }
+}
+
+@media (max-width: 1024px) {
+  .AboutUs-Container {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .AboutUs-leftSide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+  }
+
+  .AboutUs-rightSide {
+    margin-top: 500px; 
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .AboutUs-number1img {
+    margin-top: 50%; 
+    margin-right: 80%;
+    width: 20%;
+    height: 26%;
+  }
   
+  .AboutUs-number2img {
+    margin-top: 30%; 
+    margin-right: 30%;
+    width: 25%;
+    height: 30%;
+  }
+  
+  .AboutUs-number3img {
+    margin-top: 65%; 
+    margin-right: 42%;
+    width: 13%;
+    height: 21%;
+  }
+  
+  .AboutUs-number4vid {
+    margin-top: 65%; 
+    margin-left: 10%;
+    width: 34%;
+    height: 33%;
+  }
+  
+  .AboutUs-number5img {
+    margin-top: 40%; 
+    margin-left: 20%;
+    width: 20%;
+    height: 20%;
+  }
+  
+  .AboutUs-number6img {
+    margin-top: 30%; 
+    margin-left: 35%;
+    width: 35%;
+    height: 20%;
+  }
+  
+  .AboutUs-number7img {
+    margin-top: 40%; 
+    margin-left: 75%;
+    width: 25%;
+    height: 50%;
+  }
 }
 
 
@@ -356,8 +431,10 @@ body {
   }
   .AboutUs-number4vid {
     width: 100%;
-    height: 100%;
+    height: 120%;
     margin: 0 auto;
+    margin-top: -80px;
+
   }
   .AboutUs-heading {
     font-size: 25px;

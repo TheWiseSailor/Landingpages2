@@ -1,22 +1,19 @@
-
-
 /* Footer.css */
 footer {
   font-family: 'Honey Script', cursive;
   background: #FCD667;
   color: #000000;
- 
   font-size: 20px;
-font-weight:600;
-
+  font-weight: 600;
   text-align: center;
   position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 1000; 
   transition: background-color 0.3s ease;
 }
 
-/* Background color for each active page */
+
 footer.ice-cream {
   background-color: #f8d7da; 
 }
@@ -28,5 +25,3 @@ footer.bakery {
 footer.gift-shop {
   background-color: #d4edda; 
 }
-
-
