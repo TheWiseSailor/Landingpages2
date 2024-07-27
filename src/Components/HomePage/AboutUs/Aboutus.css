@@ -255,7 +255,7 @@ body {
   }
   .AboutUs-leftSide {
     align-items: center;
-    max-width: 480px;
+    max-width: 580px;
   }
   .AboutUs-rightSide {
     width: 100%;
@@ -273,43 +273,43 @@ body {
 
   /* images */
   .AboutUs-number1img {
-    margin-top: 39%;
+    margin-top: 19%;
     margin-right: 100%;
     width: 20%;
-    height: 26%;
+    height: 36%;
   }
   
   .AboutUs-number2img {
-    margin-top: 15%;
+    margin-top: 1%;
     margin-right: 50%;
     width: 25%;
-    height: 30%;
+    height: 39%;
   }
   
   .AboutUs-number3img {
-    width: 13%;
-    height: 21%;
-    margin-top: 65%;
-    margin-right: 62%;
+    width: 25%;
+    height: 29%;
+    margin-top: 42%;
+    margin-right: 50%;
   }
   
   .AboutUs-number4vid {
-    width: 34%;
+    width: 30%;
     height: 33%;
-    margin-top: 65%;
-    margin-right: 19%;
+    margin-top: 55%;
+    margin-right: 0%;
   }
   
   .AboutUs-number5img {
-    width: 20%;
-    height: 20%;
-    margin-top: 33%;
-    margin-left:5%;
+    width: 30%;
+    height: 28%;
+    margin-top: 23%;
+    margin-left:10%;
   }
   
   .AboutUs-number6img {
-    width: 39%;
-    height: 25%;
+    width: 45%;
+    height: 30%;
     margin-left: 25%;
     margin-top: -40px;
   }
@@ -317,13 +317,13 @@ body {
   .AboutUs-number7img {
     width: 40%;
     height: 50%;
-    margin-top: 35%;
-    margin-left: 75%;
+    margin-top: 25%;
+    margin-left: 85%;
   }
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .AboutUs-rightSide {
     width: 450px;
     height: 450px;
