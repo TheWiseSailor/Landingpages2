@@ -126,6 +126,8 @@ body {
 @media (max-width: 1261px) {
   .AboutUs-leftSide {
 margin-top: -150px;
+
+margin:0 auto;
   }
   
   .AboutUs-number1img {
@@ -180,23 +182,22 @@ margin-top: -150px;
 
 @media (max-width: 1024px) {
   .AboutUs-Container {
-    position: relative;
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse; /* Flips the order of the children */
     align-items: center;
+    position: relative;
   }
 
   .AboutUs-leftSide {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px; 
+    margin: 0px auto 0 auto; 
+    position: relative;
     z-index: 10;
-    margin-top: -4px;
   }
 
   .AboutUs-rightSide {
-    margin-top: 500px; 
+    margin-top: 0; /* Remove the large top margin */
     width: 100%;
     height: auto;
     position: relative;
@@ -209,42 +210,42 @@ margin-top: -150px;
     width: 20%;
     height: 26%;
   }
-  
+
   .AboutUs-number2img {
     margin-top: 30%; 
     margin-right: 30%;
     width: 25%;
     height: 30%;
   }
-  
+
   .AboutUs-number3img {
     margin-top: 65%; 
     margin-right: 42%;
     width: 13%;
     height: 21%;
   }
-  
+
   .AboutUs-number4vid {
     margin-top: 65%; 
     margin-left: 10%;
     width: 34%;
     height: 33%;
   }
-  
+
   .AboutUs-number5img {
     margin-top: 40%; 
     margin-left: 20%;
     width: 20%;
     height: 20%;
   }
-  
+
   .AboutUs-number6img {
     margin-top: 30%; 
     margin-left: 35%;
     width: 35%;
     height: 20%;
   }
-  
+
   .AboutUs-number7img {
     margin-top: 40%; 
     margin-left: 75%;
@@ -252,8 +253,6 @@ margin-top: -150px;
     height: 50%;
   }
 }
-
-
 @media (max-width: 1024px) {
   .AboutUs-Container {
     flex-direction: column-reverse;
@@ -415,41 +414,11 @@ margin-top: -150px;
   .AboutUs-subHeading {
     font-size: 14px;
     line-height: 25px;
+    margin-top: -20px;
   }
   .AboutUs-leftSide {
     width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .AboutUs-number1img,
-  .AboutUs-number2img,
-  .AboutUs-number3img,
-  .AboutUs-number5img,
-  .AboutUs-number6img,
-  .AboutUs-number7img {
-    display: none;
-  }
-  .AboutUs-rightSide {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 100px;
-  }
-  .AboutUs-number4vid {
-    width: 100%;
-    height: 120%;
-    margin: 0 auto;
-    margin-top: -80px;
-
-  }
-  .AboutUs-heading {
-    font-size: 25px;
-    line-height: 40px;
-  }
-  .AboutUs-subHeading {
-    font-size: 14px;
-    line-height: 25px;
-  }
-  .AboutUs-leftSide {
-    width: 100%;
+    margin-top: -90px;
+    padding-bottom: 50px;
   }
 }
