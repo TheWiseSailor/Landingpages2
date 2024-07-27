@@ -124,6 +124,10 @@ body {
 }
 
 @media (max-width: 1261px) {
+  .AboutUs-leftSide {
+margin-top: -150px;
+  }
+  
   .AboutUs-number1img {
     margin-top: 39%;
     margin-right: 80%;
@@ -188,6 +192,7 @@ body {
     width: 100%;
     max-width: 400px;
     z-index: 10;
+    margin-top: -4px;
   }
 
   .AboutUs-rightSide {
