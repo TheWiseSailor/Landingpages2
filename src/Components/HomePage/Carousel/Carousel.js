@@ -4,7 +4,7 @@ import './Carousel.css';
 const Carousel = () => {
   return (
     <div className='Carousel-title'>
-      <h1>wdadasdawdad</h1>
+      <h1>Customer Reviews!</h1>
       
     <div className="content-slider">
       <div className="slider">
