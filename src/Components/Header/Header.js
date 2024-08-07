@@ -41,12 +41,7 @@ const Header = () => {
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
             <li className='nav-li'>
-              <Link
-                to="/ice-cream"
-                className={activeLink === '/ice-cream' ? 'active' : ''}
-              >
-                Ice Cream
-              </Link>
+ 
             </li>
             <li className='nav-li'>
               <Link
